@@ -1,2 +1,0 @@
-# SkillTreeHomework
-MVC@demo
