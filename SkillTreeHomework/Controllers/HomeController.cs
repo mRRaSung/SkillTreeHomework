@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using SkillTreeHomework.ViewModels.Home;
+using System;
 using System.Web.Mvc;
 
 namespace SkillTreeHomework.Controllers
@@ -10,7 +8,26 @@ namespace SkillTreeHomework.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            IndexViewModel model = new IndexViewModel();
+
+            Random random = new Random();
+            ViewModels.Home.Type type;
+            int amount = 0;
+            DateTime date = new DateTime(2015, 8, 24);
+
+            for(int idx = 0; idx < 100; idx++)
+            {
+                type = (ViewModels.Home.Type)random.Next(1, 3);
+                amount = random.Next(1, 99999);
+                date = date.AddDays(random.Next(30));
+
+                model.BillingDatas.Add(new BillingData() {
+                    Type = type,
+                    Date = date,
+                    Amount = amount });
+            }
+
+            return View(model);
         }
 
         public ActionResult About()
