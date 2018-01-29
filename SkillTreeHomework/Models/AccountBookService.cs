@@ -1,50 +1,48 @@
-﻿using System;
+﻿using SkillTreeHomework.Repositories;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace SkillTreeHomework.Models
 {
     public class AccountBookService
     {
-        private readonly Model1 _db;
+        private readonly IRepository<AccountBook> _repAccountBook;
+        private readonly IUnitOfWork _uniOfWork;
 
-        public AccountBookService()
+        public AccountBookService(IUnitOfWork unitOfWork)
         {
-            _db = new Model1();
+            _uniOfWork = unitOfWork;
+            _repAccountBook = new Repository<AccountBook>(_uniOfWork);
         }
 
         public IEnumerable<AccountBook> LookUp()
         {
-            return _db.AccountBook.ToList();
+            return _repAccountBook.LookupAll();
         }
 
         public AccountBook GetSingle(Guid id)
         {
-            return _db.AccountBook.Find(id);
+            return _repAccountBook.GetSingle(x => x.Id.Equals(id));
         }
 
         public void Add(AccountBook data)
         {
-            _db.AccountBook.Add(data);
+            _repAccountBook.Create(data);
         }
 
-        public void Edit(AccountBook pageData, AccountBook oldData)
+        public void Edit(AccountBook data)
         {
-            oldData.Categoryyy = pageData.Categoryyy;
-            oldData.Dateee = pageData.Dateee;
-            oldData.Amounttt = pageData.Amounttt;
-            oldData.Remarkkk = pageData.Remarkkk;
+            _repAccountBook.Update(data);
         }
 
         public void Delete(AccountBook data)
         {
-            _db.AccountBook.Remove(data);
+            _repAccountBook.Remove(data);
         }
 
         public void Save()
         {
-            _db.SaveChanges();
+            _repAccountBook.Commit();
         }
     }
 }

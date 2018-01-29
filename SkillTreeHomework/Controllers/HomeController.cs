@@ -1,4 +1,5 @@
 ﻿using SkillTreeHomework.Models;
+using SkillTreeHomework.Repositories;
 using SkillTreeHomework.ViewModels.Home;
 using System.Linq;
 using System.Web.Mvc;
@@ -11,7 +12,8 @@ namespace SkillTreeHomework.Controllers
 
         public HomeController()
         {
-            _serviceAccountBook = new AccountBookService();
+            var unitOfWork = new EFUnitOfWork();
+            _serviceAccountBook = new AccountBookService(unitOfWork);
         }
 
         public ActionResult Index()
