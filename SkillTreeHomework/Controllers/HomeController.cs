@@ -7,13 +7,18 @@ namespace SkillTreeHomework.Controllers
 {
     public class HomeController : Controller
     {
-        private Model1 db = new Model1();
+        private readonly AccountBookService _serviceAccountBook;
+
+        public HomeController()
+        {
+            _serviceAccountBook = new AccountBookService();
+        }
 
         public ActionResult Index()
         {
             IndexViewModel model = new IndexViewModel();
 
-            db.AccountBook.ToList().ForEach(x =>
+            _serviceAccountBook.LookUp().ToList().ForEach(x =>
             {
                 model.BillingDatas.Add(new BillingData()
                 {
