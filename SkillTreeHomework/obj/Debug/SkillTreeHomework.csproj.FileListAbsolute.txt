@@ -3,6 +3,8 @@ D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\SkillTreeHomework.dll.con
 D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\SkillTreeHomework.dll
 D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\SkillTreeHomework.pdb
 D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\Antlr3.Runtime.dll
+D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\EntityFramework.dll
+D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\EntityFramework.SqlServer.dll
 D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\Microsoft.AI.Agent.Intercept.dll
 D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\Microsoft.AI.DependencyCollector.dll
 D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\Microsoft.AI.PerfCounterCollector.dll
@@ -21,6 +23,8 @@ D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\System.Web.WebPages.Deplo
 D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\System.Web.WebPages.dll
 D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\System.Web.WebPages.Razor.dll
 D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\WebGrease.dll
+D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\EntityFramework.xml
+D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\EntityFramework.SqlServer.xml
 D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\System.Web.Helpers.xml
 D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\System.Web.Mvc.xml
@@ -36,6 +40,7 @@ D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\Microsoft.AI.DependencyCo
 D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\Microsoft.AI.ServerTelemetryChannel.xml
 D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\Microsoft.AI.WindowsServer.xml
 D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\Microsoft.AI.Web.xml
+D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\zh-Hant\EntityFramework.resources.dll
 D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\zh-Hant\System.Web.Helpers.resources.dll
 D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\zh-Hant\System.Web.Mvc.resources.dll
 D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\zh-Hant\System.Web.Optimization.resources.dll
@@ -43,7 +48,7 @@ D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\zh-Hant\System.Web.Razor.
 D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\zh-Hant\System.Web.WebPages.resources.dll
 D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\zh-Hant\System.Web.WebPages.Deployment.resources.dll
 D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\bin\zh-Hant\System.Web.WebPages.Razor.resources.dll
-D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\obj\Debug\SkillTreeHomework.csprojResolveAssemblyReference.cache
 D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\obj\Debug\SkillTreeHomework.csproj.CoreCompileInputs.cache
 D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\obj\Debug\SkillTreeHomework.dll
 D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\obj\Debug\SkillTreeHomework.pdb
+D:\_Ryan\_PROD\SkillTreeHomework\SkillTreeHomework\obj\Debug\SkillTreeHomework.csprojResolveAssemblyReference.cache

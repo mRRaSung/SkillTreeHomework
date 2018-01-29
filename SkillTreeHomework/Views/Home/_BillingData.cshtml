@@ -11,19 +11,17 @@
             </tr>
 
             @{ 
-                int idx = 1;
+                int i = 0;
             }
 
             @foreach(var item in Model.BillingDatas)
             {
                 <tr>
-                    <td>@idx</td>
+                    <td>@(++i)</td>
                     <td>@item.Type.ToString()</td>
                     <td>@item.Date.ToString("yyyy-MM-dd")</td>
                     <td>@item.Amount.ToString("#,0")</td>
                 </tr>
-
-                idx++;
             }
         </table>
     </div>

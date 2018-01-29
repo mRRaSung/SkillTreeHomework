@@ -1,31 +1,27 @@
-﻿using SkillTreeHomework.ViewModels.Home;
-using System;
+﻿using SkillTreeHomework.Models;
+using SkillTreeHomework.ViewModels.Home;
+using System.Linq;
 using System.Web.Mvc;
 
 namespace SkillTreeHomework.Controllers
 {
     public class HomeController : Controller
     {
+        private Model1 db = new Model1();
+
         public ActionResult Index()
         {
             IndexViewModel model = new IndexViewModel();
 
-            Random random = new Random();
-            ViewModels.Home.Type type;
-            int amount = 0;
-            DateTime date = new DateTime(2015, 8, 24);
-
-            for(int idx = 0; idx < 100; idx++)
+            db.AccountBook.ToList().ForEach(x =>
             {
-                type = (ViewModels.Home.Type)random.Next(1, 3);
-                amount = random.Next(1, 99999);
-                date = date.AddDays(random.Next(30));
-
-                model.BillingDatas.Add(new BillingData() {
-                    Type = type,
-                    Date = date,
-                    Amount = amount });
-            }
+                model.BillingDatas.Add(new BillingData()
+                {
+                    Type = (Type)(x.Categoryyy + 1),
+                    Date = x.Dateee,
+                    Amount = x.Amounttt
+                });
+            });
 
             return View(model);
         }
